@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>
+            DMV Vehicles
+        </title>
+    </head>
+    <body>
+        <h1>DMV Vehicles</h1>
+        <% vehicles.forEach(function(vehicle){%>
+            <div><%= vehicle%></div>
+            <a href="/vehicles/<%=vehicle._id%>">show more</a>
+            <form action="/vehicles/<%=vehicle._id%>/edit" method="GET"><Button type="submit" class="btn btn-primary">Edit</Button></form>
+        <%})%>
+    </body>
+</html>

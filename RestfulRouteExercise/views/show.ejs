@@ -1,0 +1,8 @@
+<h1>Vehicle Information</h1>
+<h2>Make: <%=vehicle.make%></h2>
+<h2>Model: <%=vehicle.model%></h2>
+<h2>Year: <%=vehicle.year%></h2>
+<h2>Color: <%=vehicle.color%></h2>
+<form action="/vehicles/<%=vehicle._id%>?_method=DELETE" method="POST">
+    <button type="Submit" class="btn btn-primary">Delete</button>
+</form>
